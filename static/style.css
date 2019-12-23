@@ -34,6 +34,7 @@ body {
 	background-image: url("img.jpg");
 	width:100%;
 	height:auto;
+	height: 400px;
 	overflow: hidden;
 }
 .logo {
@@ -182,10 +183,10 @@ section .menu-list ul li a#isActive {
 }
 
 .cards .card {
+	display: inline-block;
 	width: 272px;
 	margin: 4px;
 	height: auto;
-	float: left;
 	text-align: center;
 	border-radius: 8px
 	/*box-shadow: 0 0 10px 0 rgba(0,0,0, .25);*/
@@ -535,3 +536,100 @@ Red fails : #dc35455c
 
 
 /* ///////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+/* smartphones portrait */
+
+@media (max-width: 479px) {
+	section .intro h3 {
+		font-size: x-large;
+	}
+	section .intro-title {
+		font-size: xx-large;
+	}
+
+}	
+
+
+/* smartphone */
+
+@media (min-width: 480px) and (max-width: 767px) {
+	/* header */
+	.header-background {
+		height: 250px
+	}
+	.container {
+		width: 80%
+	}
+	header .container-logo img {
+		width: 100px;
+		left: 10px
+	}
+
+	.text-inside h4 {
+		display: none;
+		font-size: small;
+	}
+
+	.text-inside h2 {
+		font-size: large;
+	}
+
+	.search-input {
+		width: 90%;
+		margin:35px auto;
+
+	}
+
+	.search-input input[type="text"] {
+		height: 35px;
+
+	}
+
+	/* End header */
+	section .intro-title {
+		width: auto
+	}
+
+	section .intro-description {
+		width: auto;
+	}
+
+	section .menu-list ul li {
+		padding: 5px;
+		margin-right: auto;
+	}
+
+	/* Section */
+	.cards .card {
+		float: none;
+		display: inline-block;
+	}
+
+
+
+
+	/* End section */
+}
+
+
+/* Tablets and mini laptop */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/* Desktop / laptop */ 
+@media (min-width: 992px) and (max-width: 1329px) {
+
+}
+
+/* wide screen */ 
+@media (min-width: 1330px)
